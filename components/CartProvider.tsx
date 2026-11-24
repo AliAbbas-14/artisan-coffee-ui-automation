@@ -37,7 +37,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const showToast = useCallback((message: string) => {
     const id = Date.now();
     setToast({ id, message });
-    const t = setTimeout(() => setToast((cur) => (cur?.id === id ? null : cur)), 2800);
+    const t = setTimeout(() => setToast((cur: Toast | null) => (cur?.id === id ? null : cur)), 2800);
     return () => clearTimeout(t);
   }, []);
 
