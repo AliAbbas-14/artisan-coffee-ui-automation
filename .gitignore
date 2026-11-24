@@ -7,3 +7,20 @@ out/
 .DS_Store
 
 .vercel
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Generator scripts (one-time use)
+generate_pdf.py
+generate_ppt.py
+
+# Local DB
+dev.db
+
